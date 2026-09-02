@@ -12,5 +12,4 @@ void main() {
        ("A hipotenusa é %.2f (A: %.2f - B: %.2f)!!!\n", 
                 hipotenusa, catetoA, catetoB);
     IO.readln();
-
 }

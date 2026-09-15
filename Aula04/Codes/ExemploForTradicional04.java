@@ -14,10 +14,11 @@ void main() {
 			IO.println("i: "+ i);
             i++;
        	}
-
+        String i = "4";
         for (int j = 0; j < 3; j++) {
 			IO.println("j: "+ j);
        	}
+        String j = "3";
 }
 
 

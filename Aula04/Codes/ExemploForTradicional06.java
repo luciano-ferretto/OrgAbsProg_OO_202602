@@ -9,12 +9,13 @@ void main() {
          * O loop não possui instruções em seu corpo
          */
         int sum = 5;
-		for (int i = 1; i <= 5; sum += ++i) ;
+        int i = 1;
+		for (i++; i <= 5; sum += ++i) ;
 		IO.println("O valor da variável sum é: " + sum);
         //aqui o resultado vai ser 25
 
         sum = 5;
-		for (int i = 1; i <= 5; sum += i++) ;
+		//for (int i = 1; i <= 5; sum += i++) ;
 		IO.println("O valor da variável sum é: " + sum);
         //aqui o resultado vai ser 20
 }

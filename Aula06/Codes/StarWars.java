@@ -14,6 +14,8 @@ void main(){
     IO.println("Jedi: " + jedi.nome);
     IO.println("Padawan: " + padawan);
     IO.println("Idade do Padawan: " + idadeAnakin);
+
+    padawan = "Luke Skywalker";
 }
 
 void conselhoJedi(Pessoa mestre, String aprendiz, int idade){

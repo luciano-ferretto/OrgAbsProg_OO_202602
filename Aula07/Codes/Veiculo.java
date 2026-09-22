@@ -78,4 +78,25 @@ public class Veiculo {
         return placa.matches(regex);
     }
 
+    @Override  //annotations
+    public String toString() {
+        String descricao = """
+                %s %s (%d)
+                Placa: %s
+                """;
+        return descricao.formatted(
+            this.getMarca(),
+            this.getModelo(),
+            this.getAno(),
+            this.getPlaca()
+        );
+    }
+
+    
+
+
+
+
+
+
 }

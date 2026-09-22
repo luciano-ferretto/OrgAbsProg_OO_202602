@@ -1,4 +1,29 @@
+import java.util.List;
+void imprimirVeiculos(List<Veiculo> veiculos) {
+    for (Veiculo v : veiculos) {
+        IO.println(v.toString());
+        //ou simplesmente = IO.println(v);
+    }
+}
+
+
 void main(){
+ 
+    Caminhao fnm = new Caminhao(
+        "FNM", "FNM D-11000",1965,"ABC-1234",13000,3);
+
+    Carro palio = new Carro(
+        "Fiat", "Palio Fire 1.0", 2011, "xyz-3333", 4, "Flex");
+
+    Veiculo cg = new Veiculo("Honda", "CG 150", 2014, "eee-8888");
+
+    
+    imprimirVeiculos(List.of(fnm, palio, cg));
+
+
+
+
+    IO.println(fnm.toString());
     
     Veiculo fusca = new Veiculo();
     //fusca.marca = "Volkswagem";

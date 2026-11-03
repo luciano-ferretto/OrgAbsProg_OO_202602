@@ -8,9 +8,24 @@ void imprimirVeiculos(List<Veiculo> veiculos) {
 
 
 void main(){
+    int soma = 0;
+    int[] vetor = new int[]{2, 4, 6, 8};
+    for (int i : vetor) {
+        soma += i;
+    }
+
  
     Caminhao fnm = new Caminhao(
         "FNM", "FNM D-11000",1965,"ABC-1234",13000,3);
+
+    IO.print(fnm);
+    IO.print("""
+            - Marca: %s
+            - Modelo: %s
+            """.formatted(fnm.getMarca(), fnm.getModelo()));
+
+        fnm.calculaTempoUso(2030);
+
 
     Carro palio = new Carro(
         "Fiat", "Palio Fire 1.0", 2011, "xyz-3333", 4, "Flex");

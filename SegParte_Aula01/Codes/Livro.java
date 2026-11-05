@@ -1,8 +1,11 @@
 public class Livro {
+
     private String titulo;
     private String autor;
     private int anoPublicacao;
 
+
+    // Método construtor
     public Livro(String titulo, String autor, int anoPublicacao) {
         this.titulo = titulo;
         this.autor = autor;
@@ -33,7 +36,7 @@ public class Livro {
         this.anoPublicacao = anoPublicacao;
     }
 
-    @Override
+    @Override 
     public String toString() {
         return "Título: %s - Autor: %s - Ano de Publicação: %d".formatted(titulo, autor, anoPublicacao);
     }

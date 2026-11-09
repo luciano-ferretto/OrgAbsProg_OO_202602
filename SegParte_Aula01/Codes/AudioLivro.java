@@ -1,9 +1,9 @@
-public class AudioLivro extends LivroDigital {
+public class AudioLivro extends Livro {
     private int duracao;
     private String narrador;
 
-    public AudioLivro(String titulo, String autor, int anoPublicacao, String formato, double tamanhoArquivo, int duracao, String narrador) {
-        super(titulo, autor, anoPublicacao, formato, tamanhoArquivo);
+    public AudioLivro(String titulo, String autor, int anoPublicacao, int duracao, String narrador) {
+        super(titulo, autor, anoPublicacao);
         this.duracao = duracao;
         this.narrador = narrador;
     }

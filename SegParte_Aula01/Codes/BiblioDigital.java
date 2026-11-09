@@ -55,10 +55,9 @@ void cadastrar(List<Livro> livros) {
     } else {
         int duracao = Integer.parseInt(IO.readln("Digite a duração do audiolivro: "));
         String narrador = IO.readln("Digite o nome do narrador: ");
-        novoLivro = new AudioLivro(titulo, autor, anoPublicacao, autor, anoPublicacao, duracao, narrador);
-    }
+        novoLivro = new AudioLivro(titulo, autor, anoPublicacao, duracao, narrador);
+    }  
     livros.add(novoLivro);
-
 }
 
 void imprimirLivros(List<Livro> livros) {

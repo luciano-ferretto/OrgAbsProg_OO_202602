@@ -1,5 +1,6 @@
 
 void main() {
+      
     List<Livro> livros = new ArrayList<>();
 
     int opcao;
@@ -66,6 +67,12 @@ void imprimirLivros(List<Livro> livros) {
     } else {
         for (Livro livro : livros) {
             IO.println(livro);
+            IO.println("Tipo: " + livro.getTipo());
+
+            if (livro instanceof LivroFisico) {
+                LivroFisico fisico = (LivroFisico) livro;
+                IO.println("Exemplares: " + fisico.getQuantidadeExemplares());
+            }
         }
     }
 }

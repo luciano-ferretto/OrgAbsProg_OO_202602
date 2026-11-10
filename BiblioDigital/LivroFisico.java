@@ -1,4 +1,4 @@
-public class LivroFisico extends Livro {
+public final class LivroFisico extends Livro {
     
     private int quantidadeExemplares;
     private String localizacao;
@@ -29,4 +29,10 @@ public class LivroFisico extends Livro {
     public String toString() {
         return super.toString() + " - Quantidade de Exemplares: %d - Localização: %s".formatted(quantidadeExemplares, localizacao);
     }
+
+    @Override
+    public String getTipo() {
+        return "Físico";
+    }
+    
 }

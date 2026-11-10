@@ -30,4 +30,9 @@ public final class LivroDigital extends Livro {
         return super.toString() +" - Formato: %s - Tamanho do Arquivo: %.2f MB".formatted(formato, tamanhoArquivo);
     }
 
+    @Override
+    public String getTipo() {
+        return "Digital";
+    }
+
 }

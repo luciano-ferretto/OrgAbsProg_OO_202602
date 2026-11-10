@@ -1,4 +1,4 @@
-public class AudioLivro extends Livro {
+public final class AudioLivro extends Livro {
     private int duracao;
     private String narrador;
 
@@ -27,5 +27,10 @@ public class AudioLivro extends Livro {
     @Override
     public String toString() {
         return super.toString() + " - Duração: %d minutos - Narrador: %s".formatted(duracao, narrador);
+    }
+
+    @Override
+    public String getTipo() {
+        return "AudioLivro";
     }
 }

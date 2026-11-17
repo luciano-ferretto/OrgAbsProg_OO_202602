@@ -66,7 +66,7 @@ public class SimuladorEmprestimoMonolitico {
 
         // 4. CAMADA DE DADOS/PERSISTÊNCIA (Salvar a Simulação em Arquivo)
         
-        String nomeArquivo = "simulacao_emprestimo.txt";
+        String nomeArquivo = "./simulacao_emprestimo.txt";
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
         
         String dadosSimulacao = String.format(
